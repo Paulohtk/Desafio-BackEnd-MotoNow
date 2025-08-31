@@ -39,11 +39,18 @@ API para gestão de locações de motos com regras de plano por período, cálcu
 ```
 
 ## Rodando com Docker Compose
+0) **Variaveis:**
+O projeto contem 2 .env, sendo usado para linux e windows.
 
 1) **Build e subida:**
 ```bash
-docker compose build
-docker compose up -d
+
+Para windows:
+docker compose --env-file .env.windows up -d --build
+
+Para linux:
+docker compose --env-file .env.linux up -d --build
+
 ```
 
 2) **Serviços expostos:**
@@ -110,6 +117,9 @@ dotnet run
 
 - **Porta já em uso**  
   Troque `API_HTTP_PORT` no `.env` ou ajuste `ASPNETCORE_URLS`.
+
+ **Imagens salvas**  
+  As imagens serão salvas na pasta de Downloads/fotos_cnh.
 
 - **Migrations falhando**  
   Cheque a tabela de histórico:  
