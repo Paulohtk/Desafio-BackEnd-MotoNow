@@ -1,0 +1,187 @@
+[
+  {
+    "ContainingType": "MotoNow.API.Controllers.DeliveryDriversController",
+    "Method": "Create",
+    "RelativePath": "entregadores",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "MotoNow.Application.DTOs.CreateDelivererDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoNow.API.Controllers.DeliveryDriversController",
+    "Method": "UploadDriverLicenseImage",
+    "RelativePath": "entregadores/{id}/cnh-imagem",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "body",
+        "Type": "MotoNow.Application.DTOs.UploadCnhBase64Dto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoNow.API.Controllers.RentalController",
+    "Method": "Create",
+    "RelativePath": "Locacao",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MotoNow.Application.DTOs.CreateRentalDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoNow.API.Controllers.RentalController",
+    "Method": "GetById",
+    "RelativePath": "Locacao/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MotoNow.Application.DTOs.RentalDetailsDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MotoNow.API.Controllers.RentalController",
+    "Method": "Return",
+    "RelativePath": "Locacao/{id}/devolucao",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "body",
+        "Type": "MotoNow.Application.DTOs.ReturnRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoNow.API.Controllers.MotorCycleController",
+    "Method": "Post",
+    "RelativePath": "motos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "MotoNow.Application.DTOs.CreateMotorCycleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoNow.API.Controllers.MotorCycleController",
+    "Method": "GetAll",
+    "RelativePath": "motos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "plate",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoNow.API.Controllers.MotorCycleController",
+    "Method": "GetByIdAsync",
+    "RelativePath": "motos/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoNow.API.Controllers.MotorCycleController",
+    "Method": "UpdatePlate",
+    "RelativePath": "motos/{id}/placa",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "body",
+        "Type": "MotoNow.Application.DTOs.UpdatePlateMotorCycleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MotoNow.API.Controllers.MotorCycleController",
+    "Method": "DeleteMoto",
+    "RelativePath": "motos/motos/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

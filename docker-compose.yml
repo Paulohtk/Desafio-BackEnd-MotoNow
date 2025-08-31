@@ -1,0 +1,73 @@
+﻿version: '3.8'
+
+services:
+  postgres:
+    image: postgres:13
+    container_name: motor_postgres_db
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: adm12346
+      POSTGRES_DB: RentalDelivererDb
+    ports:
+      - "5432:5432"   # se já tiver PG local, troque para "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d RentalDelivererDb"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbit_motor
+    restart: always
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: adm12346
+
+  motonow-api:
+    build:
+      context: .                           # raiz
+      dockerfile: MotoNow.API/Dockerfile
+    container_name: motonow_api
+    restart: always
+    depends_on:
+      postgres:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_started
+    ports:
+      - "8080:8080"
+    environment:
+      ASPNETCORE_URLS: http://+:8080
+      ASPNETCORE_ENVIRONMENT: Production
+      ConnectionStrings__Default: Host=postgres;Port=5432;Database=RentalDelivererDb;Username=admin;Password=adm12346
+      RabbitMq__Host: rabbitmq
+      RabbitMq__Username: admin
+      RabbitMq__Password: adm12346
+
+  motorcycle-consumer:
+    build:
+      context: .                           # raiz
+      dockerfile: MotoNow.Consumer/Dockerfile
+    container_name: motorcycle_consumer
+    restart: always
+    depends_on:
+      postgres:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_started
+    environment:
+      ConnectionStrings__Default: Host=postgres;Port=5432;Database=RentalDelivererDb;Username=admin;Password=adm12346
+      RabbitMq__Host: rabbitmq
+      RabbitMq__Username: admin
+      RabbitMq__Password: adm12346
+      RabbitMq__Queue: motonow.motorcycle-registered
+
+volumes:
+  postgres_data:

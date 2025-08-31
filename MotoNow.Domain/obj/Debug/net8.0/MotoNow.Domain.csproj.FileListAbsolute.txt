@@ -1,0 +1,14 @@
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Domain\bin\Debug\net8.0\MotoNow.Domain.deps.json
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Domain\bin\Debug\net8.0\MotoNow.Domain.runtimeconfig.json
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Domain\bin\Debug\net8.0\MotoNow.Domain.dll
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Domain\bin\Debug\net8.0\MotoNow.Domain.pdb
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Domain\obj\Debug\net8.0\MotoNow.Domain.csproj.AssemblyReference.cache
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Domain\obj\Debug\net8.0\MotoNow.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Domain\obj\Debug\net8.0\MotoNow.Domain.AssemblyInfoInputs.cache
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Domain\obj\Debug\net8.0\MotoNow.Domain.AssemblyInfo.cs
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Domain\obj\Debug\net8.0\MotoNow.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Domain\obj\Debug\net8.0\MotoNow.Domain.dll
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Domain\obj\Debug\net8.0\refint\MotoNow.Domain.dll
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Domain\obj\Debug\net8.0\MotoNow.Domain.pdb
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Domain\obj\Debug\net8.0\MotoNow.Domain.genruntimeconfig.cache
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Domain\obj\Debug\net8.0\ref\MotoNow.Domain.dll

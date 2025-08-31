@@ -1,0 +1,17 @@
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Application\bin\Debug\net8.0\MotoNow.Application.deps.json
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Application\bin\Debug\net8.0\MotoNow.Application.runtimeconfig.json
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Application\bin\Debug\net8.0\MotoNow.Application.dll
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Application\bin\Debug\net8.0\MotoNow.Application.pdb
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Application\bin\Debug\net8.0\MotoNow.Domain.dll
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Application\bin\Debug\net8.0\MotoNow.Domain.pdb
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Application\obj\Debug\net8.0\MotoNow.Application.csproj.AssemblyReference.cache
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Application\obj\Debug\net8.0\MotoNow.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Application\obj\Debug\net8.0\MotoNow.Application.AssemblyInfoInputs.cache
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Application\obj\Debug\net8.0\MotoNow.Application.AssemblyInfo.cs
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Application\obj\Debug\net8.0\MotoNow.Application.csproj.CoreCompileInputs.cache
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Application\obj\Debug\net8.0\MotoNow..D2542D77.Up2Date
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Application\obj\Debug\net8.0\MotoNow.Application.dll
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Application\obj\Debug\net8.0\refint\MotoNow.Application.dll
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Application\obj\Debug\net8.0\MotoNow.Application.pdb
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Application\obj\Debug\net8.0\MotoNow.Application.genruntimeconfig.cache
+C:\Users\Paulo\source\repos\MotoNow\MotoNow.Application\obj\Debug\net8.0\ref\MotoNow.Application.dll

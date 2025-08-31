@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-MotoNow.Consumer-c245f852-5df6-4944-b059-426480e5015e</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+    <PackageReference Include="MassTransit" Version="8.5.2" />
+    <PackageReference Include="MassTransit.Abstractions" Version="8.5.2" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="8.5.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
+	<ProjectReference Include="..\MotoNow.Application\MotoNow.Application.csproj" />
+	<ProjectReference Include="..\MotoNow.Domain\MotoNow.Domain.csproj" />
+	<ProjectReference Include="..\MotoNow.Infrastructure\MotoNow.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

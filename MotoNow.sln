@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotoNow.Domain", "MotoNow.Domain\MotoNow.Domain.csproj", "{DA8C7A64-93B3-439A-9B5B-B17D7AFD03CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotoNow.Infrastructure", "MotoNow.Infrastructure\MotoNow.Infrastructure.csproj", "{F53C105A-5AF9-44FB-92CC-3149F2A035AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotoNow.Application", "MotoNow.Application\MotoNow.Application.csproj", "{82F3EF4E-A5B7-49DF-8AB2-7F1FC477B8FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotoNow.API", "MotoNow.API\MotoNow.API.csproj", "{E7EEE22B-A355-49CA-A050-B478D3EA4BC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotoNow.Consumer", "MotoNow.Consumer\MotoNow.Consumer.csproj", "{4BCF7751-785B-4B24-BD01-F4A47FCD3FE9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{FA6E1802-6746-45C5-9616-21D05CB6283F}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA8C7A64-93B3-439A-9B5B-B17D7AFD03CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA8C7A64-93B3-439A-9B5B-B17D7AFD03CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA8C7A64-93B3-439A-9B5B-B17D7AFD03CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA8C7A64-93B3-439A-9B5B-B17D7AFD03CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F53C105A-5AF9-44FB-92CC-3149F2A035AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F53C105A-5AF9-44FB-92CC-3149F2A035AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F53C105A-5AF9-44FB-92CC-3149F2A035AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F53C105A-5AF9-44FB-92CC-3149F2A035AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82F3EF4E-A5B7-49DF-8AB2-7F1FC477B8FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82F3EF4E-A5B7-49DF-8AB2-7F1FC477B8FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82F3EF4E-A5B7-49DF-8AB2-7F1FC477B8FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82F3EF4E-A5B7-49DF-8AB2-7F1FC477B8FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7EEE22B-A355-49CA-A050-B478D3EA4BC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7EEE22B-A355-49CA-A050-B478D3EA4BC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7EEE22B-A355-49CA-A050-B478D3EA4BC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7EEE22B-A355-49CA-A050-B478D3EA4BC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BCF7751-785B-4B24-BD01-F4A47FCD3FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BCF7751-785B-4B24-BD01-F4A47FCD3FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BCF7751-785B-4B24-BD01-F4A47FCD3FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BCF7751-785B-4B24-BD01-F4A47FCD3FE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
