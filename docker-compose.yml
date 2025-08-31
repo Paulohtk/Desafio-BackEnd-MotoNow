@@ -8,9 +8,9 @@ services:
     environment:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: adm12346
-      POSTGRES_DB: RentalDelivererDb
+      POSTGRES_DB: MotoNowRentals
     ports:
-      - "5432:5432"   # se já tiver PG local, troque para "5433:5432"
+      - "5432:5432"  
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
@@ -53,7 +53,7 @@ services:
 
   motorcycle-consumer:
     build:
-      context: .                           # raiz
+      context: .                         
       dockerfile: MotoNow.Consumer/Dockerfile
     container_name: motorcycle_consumer
     restart: always
