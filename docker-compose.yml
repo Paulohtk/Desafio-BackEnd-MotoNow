@@ -14,7 +14,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U admin -d RentalDelivererDb"]
+      test: ["CMD-SHELL", "pg_isready -U admin -d MotoNowRentals"]
       interval: 5s
       timeout: 5s
       retries: 10
@@ -46,10 +46,13 @@ services:
     environment:
       ASPNETCORE_URLS: http://+:8080
       ASPNETCORE_ENVIRONMENT: Production
-      ConnectionStrings__Default: Host=postgres;Port=5432;Database=RentalDelivererDb;Username=admin;Password=adm12346
+      ConnectionStrings__Default: Host=postgres;Port=5432;Database=MotoNowRentals;Username=admin;Password=adm12346
       RabbitMq__Host: rabbitmq
       RabbitMq__Username: admin
       RabbitMq__Password: adm12346
+      Storage__Local__BasePath: /downloads/fotos_cnh
+    volumes:
+     - "${HOST_DOWNLOADS_DIR}/fotos_cnh:/downloads/fotos_cnh"
 
   motorcycle-consumer:
     build:
@@ -63,7 +66,7 @@ services:
       rabbitmq:
         condition: service_started
     environment:
-      ConnectionStrings__Default: Host=postgres;Port=5432;Database=RentalDelivererDb;Username=admin;Password=adm12346
+      ConnectionStrings__Default: Host=postgres;Port=5432;Database=MotoNowRentals;Username=admin;Password=adm12346
       RabbitMq__Host: rabbitmq
       RabbitMq__Username: admin
       RabbitMq__Password: adm12346
